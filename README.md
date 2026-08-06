@@ -19,3 +19,8 @@ The program shows that Binary Search is significantly more efficient than Linear
 
 ## PRACTICAL NUMBER 4
 
+Summary =
+This C++ program calculates the factorial of a non-negative integer using two different approaches: iterative and recursive. It accepts user input, validates that the number is non-negative, and computes the factorial using both methods. The program also measures and compares the execution time of each approach using the chrono library with nanosecond precision. The iterative method uses a loop and requires constant extra memory, while the recursive method repeatedly calls itself until the base case is reached, consuming additional memory due to the function call stack.
+
+Conclusion =
+The program demonstrates that both iterative and recursive methods produce the same factorial result for a valid input. However, the iterative approach is generally more efficient because it uses O(1) space and avoids the overhead of recursive function calls. The recursive approach is simpler and easier to understand conceptually but requires O(n) space due to recursion. Overall, this program effectively compares the performance and memory usage of both techniques while illustrating the concepts of algorithm complexity and execution time measurement.
