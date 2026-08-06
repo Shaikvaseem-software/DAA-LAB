@@ -1,3 +1,13 @@
-PRACTICAL NUMBER 1 
+## PRACTICAL NUMBER 1 
 
-SUMMARY =
+SUMMARY = This C++ program compares the performance of five popular sorting algorithms: **Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, and Quick Sort**. It generates an array of 1,000 random integers and creates a copy of the same data for each algorithm to ensure a fair comparison. Each sorting algorithm is implemented in a separate function, with Merge Sort and Quick Sort using recursive helper functions (`merge()` and `partition()`) to perform their operations efficiently.
+
+The program measures the execution time of each sorting algorithm using the C++ `<chrono>` library. A helper function named `runBenchmark()` records the start and end times, calculates the elapsed time in microseconds, and displays the result. This allows users to compare the efficiency of different sorting techniques under the same conditions.
+
+Overall, the program demonstrates the practical differences in sorting performance. Simpler algorithms such as Bubble Sort, Selection Sort, and Insertion Sort generally require more time for larger datasets due to their quadratic time complexity, while Merge Sort and Quick Sort are significantly faster because they use more efficient divide-and-conquer strategies with an average time complexity of **O(n log n)**.
+
+COCLUSION = This program successfully implements and benchmarks five different sorting algorithms: Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, and Quick Sort. By measuring the execution time of each algorithm on the same randomly generated dataset, it provides a clear comparison of their performance. The results show that Bubble Sort, Selection Sort, and Insertion Sort are slower for larger arrays because of their **O(n²)** time complexity. In contrast, Merge Sort and Quick Sort perform much faster due to their **O(n log n)** average time complexity, making them more suitable for handling large datasets. Overall, the program demonstrates the importance of selecting an efficient sorting algorithm based on the size and requirements of the data, highlighting why advanced algorithms are preferred in real-world applications.
+
+## PRACTICAL NUMBER 2
+
+SUMMARY = 
