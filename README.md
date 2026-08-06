@@ -10,4 +10,12 @@ COCLUSION = This program successfully implements and benchmarks five different s
 
 ## PRACTICAL NUMBER 2
 
-SUMMARY = 
+ Summary =
+This C++ program demonstrates and compares the performance of Linear Search and Binary Search algorithms. It creates a sorted vector of 100,000 elements containing values from 1 to 100,000. The user enters a number to search for, and the program searches for the element using both algorithms separately.
+The Linear Search function checks each element one by one until the target is found or the end of the array is reached. The Binary Search function takes advantage of the sorted array by repeatedly dividing the search range in half, making it much faster for large datasets. The program also measures and displays the execution time of each search using the <chrono> library in microseconds, allowing a direct comparison of their performance.
+
+Conclusion =
+The program shows that Binary Search is significantly more efficient than Linear Search when working with sorted data. While Linear Search has a time complexity of O(n) because it may need to examine every element, Binary Search has a time complexity of O(log n) by reducing the search space by half in each step. The execution time comparison confirms that Binary Search performs much faster for large arrays. Therefore, Binary Search is the preferred choice for searching in sorted datasets, whereas Linear Search is more suitable for small or unsorted collections.
+
+## PRACTICAL NUMBER 4
+
