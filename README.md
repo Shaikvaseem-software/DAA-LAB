@@ -24,3 +24,13 @@ This C++ program calculates the factorial of a non-negative integer using two di
 
 Conclusion =
 The program demonstrates that both iterative and recursive methods produce the same factorial result for a valid input. However, the iterative approach is generally more efficient because it uses O(1) space and avoids the overhead of recursive function calls. The recursive approach is simpler and easier to understand conceptually but requires O(n) space due to recursion. Overall, this program effectively compares the performance and memory usage of both techniques while illustrating the concepts of algorithm complexity and execution time measurement.
+
+## PRACTICAL NUMBER 3
+
+Summary
+
+This program implements Heap Sort using both Max Heap and Min Heap techniques. It generates random integer values, copies the data into two arrays, and sorts them separately using Max Heap Sort and Min Heap Sort. The program also uses the C++ chrono library to measure and display the execution time of each sorting method in nanoseconds. Both methods have a time complexity of O(n log n).
+
+Conclusion
+
+The program successfully demonstrates the working of Max Heap Sort and Min Heap Sort and compares their execution time. It shows that Heap Sort provides efficient sorting with O(n log n) time complexity and requires no additional large memory for sorting. The measured execution time may vary depending on the number of elements and system performance.
