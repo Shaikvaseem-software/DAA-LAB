@@ -1,0 +1,68 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cstdlib>
+#include <ctime>
+#include <chrono>
+using namespace std;
+using namespace chrono;
+
+void heapify(vector<int>& a, int n, int i, bool maxHeap)
+{
+    int x = i, l = 2*i+1, r = 2*i+2;
+
+    if (l < n && (maxHeap ? a[l] > a[x] : a[l] < a[x])) x = l;
+    if (r < n && (maxHeap ? a[r] > a[x] : a[r] < a[x])) x = r;
+
+    if (x != i) {
+        swap(a[i], a[x]);
+        heapify(a, n, x, maxHeap);
+    }
+}
+
+void heapSort(vector<int>& a, bool maxHeap)
+{
+    int n = a.size();
+
+    for (int i = n/2-1; i >= 0; i--)
+        heapify(a, n, i, maxHeap);
+
+    for (int i = n-1; i > 0; i--) {
+        swap(a[0], a[i]);
+        heapify(a, i, 0, maxHeap);
+    }
+
+    if (!maxHeap)
+        reverse(a.begin(), a.end());
+}
+
+int main()
+{
+    int n;
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    srand(time(0));
+    vector<int> a(n);
+
+    for (int &x : a)
+        x = rand() % 100000;
+
+    vector<int> maxA = a, minA = a;
+
+    auto s1 = high_resolution_clock::now();
+    heapSort(maxA, true);
+    auto e1 = high_resolution_clock::now();
+
+    auto s2 = high_resolution_clock::now();
+    heapSort(minA, false);
+    auto e2 = high_resolution_clock::now();
+
+    cout << "\nMax Heap Sort: "
+         << duration_cast<nanoseconds>(e1-s1).count() << " ns\n";
+
+    cout << "Min Heap Sort: "
+         << duration_cast<nanoseconds>(e2-s2).count() << " ns\n";
+
+    return 0;
+}
