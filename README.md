@@ -39,7 +39,4 @@ Summary =
 Chain Matrix Multiplication is a Dynamic Programming technique used to find the most efficient order of multiplying a sequence of matrices. The algorithm divides the matrix chain into smaller subproblems and stores their results to avoid repeated calculations.
 
 Conclusion =
-The Chain Matrix Multiplication algorithm successfully determines the minimum number of scalar multiplications required to multiply a given sequence of matrices. Using Dynamic Programming reduces unnecessary calculations and provides an efficient solution compared with checking all possible multiplication orders.
-
-## PRACTICAL NUMBER 7
-
+The Chain Matrix Multiplication algorithm successfully determines the minimum number of scalar multiplications required to multiply a given sequence of matrices. Using Dynamic Programming reduces unnecessary calculations and provides an efficient solution compared with checking all possible multiplication order.
