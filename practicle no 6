@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <limits.h>
+
+#define MAX 100
+
+void matrixChainOrder(int p[], int n)
+{
+    int m[MAX][MAX];
+    int i, j, k, l, q;
+
+    // Cost is zero when multiplying one matrix
+    for (i = 1; i <= n; i++)
+        m[i][i] = 0;
+
+    // l is the chain length
+    for (l = 2; l <= n; l++)
+    {
+        for (i = 1; i <= n - l + 1; i++)
+        {
+            j = i + l - 1;
+            m[i][j] = INT_MAX;
+
+            for (k = i; k < j; k++)
+            {
+                q = m[i][k] + m[k + 1][j]
+                    + p[i - 1] * p[k] * p[j];
+
+                if (q < m[i][j])
+                    m[i][j] = q;
+            }
+        }
+    }
+
+    printf("Minimum number of scalar multiplications = %d\n",
+           m[1][n]);
+}
+
+int main()
+{
+    int n, i;
+    int p[MAX];
+
+    printf("Enter number of matrices: ");
+    scanf("%d", &n);
+
+    printf("Enter dimensions of matrices:\n");
+    printf("For n matrices, enter n+1 dimensions.\n");
+
+    for (i = 0; i <= n; i++)
+        scanf("%d", &p[i]);
+
+    matrixChainOrder(p, n);
+
+    return 0;
+}
