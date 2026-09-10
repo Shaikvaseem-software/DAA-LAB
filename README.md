@@ -17,14 +17,6 @@ The Linear Search function checks each element one by one until the target is fo
 Conclusion =
 The program shows that Binary Search is significantly more efficient than Linear Search when working with sorted data. While Linear Search has a time complexity of O(n) because it may need to examine every element, Binary Search has a time complexity of O(log n) by reducing the search space by half in each step. The execution time comparison confirms that Binary Search performs much faster for large arrays. Therefore, Binary Search is the preferred choice for searching in sorted datasets, whereas Linear Search is more suitable for small or unsorted collections.
 
-## PRACTICAL NUMBER 4
-
-Summary =
-This C++ program calculates the factorial of a non-negative integer using two different approaches: iterative and recursive. It accepts user input, validates that the number is non-negative, and computes the factorial using both methods. The program also measures and compares the execution time of each approach using the chrono library with nanosecond precision. The iterative method uses a loop and requires constant extra memory, while the recursive method repeatedly calls itself until the base case is reached, consuming additional memory due to the function call stack.
-
-Conclusion =
-The program demonstrates that both iterative and recursive methods produce the same factorial result for a valid input. However, the iterative approach is generally more efficient because it uses O(1) space and avoids the overhead of recursive function calls. The recursive approach is simpler and easier to understand conceptually but requires O(n) space due to recursion. Overall, this program effectively compares the performance and memory usage of both techniques while illustrating the concepts of algorithm complexity and execution time measurement.
-
 ## PRACTICAL NUMBER 3
 
 Summary
@@ -33,4 +25,21 @@ This program implements Heap Sort using both Max Heap and Min Heap techniques. I
 
 Conclusion
 
-The program successfully demonstrates the working of Max Heap Sort and Min Heap Sort and compares their execution time. It shows that Heap Sort provides efficient sorting with O(n log n) time complexity and requires no additional large memory for sorting. The measured execution time may vary depending on the number of elements and system performance.
+## PRACTICAL NUMBER 4
+
+Summary =
+This C++ program calculates the factorial of a non-negative integer using two different approaches: iterative and recursive. It accepts user input, validates that the number is non-negative, and computes the factorial using both methods. The program also measures and compares the execution time of each approach using the chrono library with nanosecond precision. The iterative method uses a loop and requires constant extra memory, while the recursive method repeatedly calls itself until the base case is reached, consuming additional memory due to the function call stack.
+
+Conclusion =
+The program demonstrates that both iterative and recursive methods produce the same factorial result for a valid input. However, the iterative approach is generally more efficient because it uses O(1) space and avoids the overhead of recursive function calls. The recursive approach is simpler and easier to understand conceptually but requires O(n) space due to recursion. Overall, this program effectively compares the performance and memory usage of both techniques while illustrating the concepts of algorithm complexity and execution time measurement.
+
+## PRACTICAL NUMBER 6
+
+Summary =
+Chain Matrix Multiplication is a Dynamic Programming technique used to find the most efficient order of multiplying a sequence of matrices. The algorithm divides the matrix chain into smaller subproblems and stores their results to avoid repeated calculations.
+
+Conclusion =
+The Chain Matrix Multiplication algorithm successfully determines the minimum number of scalar multiplications required to multiply a given sequence of matrices. Using Dynamic Programming reduces unnecessary calculations and provides an efficient solution compared with checking all possible multiplication orders.
+
+## PRACTICAL NUMBER 7
+
