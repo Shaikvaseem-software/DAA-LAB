@@ -40,3 +40,11 @@ Chain Matrix Multiplication is a Dynamic Programming technique used to find the 
 
 Conclusion =
 The Chain Matrix Multiplication algorithm successfully determines the minimum number of scalar multiplications required to multiply a given sequence of matrices. Using Dynamic Programming reduces unnecessary calculations and provides an efficient solution compared with checking all possible multiplication order.
+
+## PRACTICAL NUMBER 7
+
+Summary =
+The Making Change Problem using Dynamic Programming finds the minimum number of coins needed to make a given amount from the available coin denominations. The program uses a DP array to store the minimum number of coins required for each amount from 0 up to the given amount.
+
+Conclusion =
+The program successfully calculates the minimum number of coins required to make the specified amount. Dynamic Programming avoids repeated calculations by storing previously calculated results, making the solution efficient. The algorithm has a time complexity of O(amount × number of coins) and a space complexity of O(amount).
