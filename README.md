@@ -48,3 +48,11 @@ The Making Change Problem using Dynamic Programming finds the minimum number of 
 
 Conclusion =
 The program successfully calculates the minimum number of coins required to make the specified amount. Dynamic Programming avoids repeated calculations by storing previously calculated results, making the solution efficient. The algorithm has a time complexity of O(amount × number of coins) and a space complexity of O(amount).
+
+## PRACTICAL NUMBER 10
+
+Summary=
+Kruskal’s Algorithm is a greedy algorithm used to find the Minimum Spanning Tree (MST) of a weighted, undirected graph. It works by sorting all the edges in increasing order of their weights and selecting the smallest edge that does not form a cycle. The process continues until the MST contains exactly \(V-1\) edges. The algorithm commonly uses the Disjoint Set (Union-Find) data structure to efficiently detect cycles.
+
+Conclusion =
+Kruskal’s Algorithm provides an efficient and simple method for finding a Minimum Spanning Tree. It ensures that the selected edges connect all vertices with the minimum possible total weight while avoiding cycles. Its time complexity is generally \(O(E \log E)\), making it suitable for many graph-based problems and network design applications.
